@@ -1,0 +1,82 @@
+body{
+   width: 100%;
+   height: 100vh; 
+   font-family: 'Open Sans', sans-serif;
+}
+.scene {
+    width: 150px;                 /* Set width of cards */
+    height: 116px;
+    display: flex;                /* Children use Flexbox */
+    flex-direction: column;       /* Rotate Axis */
+    border: 1px solid #EF9A9A;    /* Set up Border */
+    border-radius: 4px;           /* Slightly Curve edges */
+    overflow: hidden;             /* Fixes the corners */
+    margin: 5px;                  /* Add space between cards */
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+  }
+  
+  .card:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    backface-visibility: hidden;
+  }
+  
+  .card__face--front {
+    background: whitesmoke;
+  }
+  .orgName{
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-size: 16px;
+    font-style: bold;
+    text-align: center;
+  }
+ .info1{
+    font-size: 0.497em;
+    margin-left: 2%;
+  }
+  #sill{
+    height: 40%;
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    float: left;
+  }
+  .card__face--back {
+    background: wheat;
+    transform: rotateY(180deg);
+  }
+  .scene2{
+    margin-left: 25%;
+    margin-top: 15%;
+  }
+  .scene3{
+    margin-left: 30%;
+    margin-top: -30%;
+  }
+  .node1 .node2 .node3{
+z-index: 1;
+  }
+  svg{
+      z-index: -1;
+      position: absolute;
+      display: flex;
+  }
