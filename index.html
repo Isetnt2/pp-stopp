@@ -1,77 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="leader-line.min.js"></script>
-    <script>document.onreadystatechange = () =>
-      {
-        if(document.readyState === 'complete')
-        {
-            var myLine = new LeaderLine(
-             document.getElementById('node2'),
-             document.getElementById('node4'),
-             {
-               dash: true,
-               path: 'grid',
-             }
-);
-var myLine = new LeaderLine(
-             document.getElementById('node2'),
-             document.getElementById('node3'),
-             {
-               dash: true,
-               path: 'grid',
-             }
-);
-var myLine = new LeaderLine(
-             document.getElementById('node3'),
-             document.getElementById('node4'),
-             {
-               dash: true,
-               path: 'grid',
-             }
-);
-var myLine = new LeaderLine(
-             document.getElementById('node1'),
-             document.getElementById('node2'),
-             {
-               dash: true,
-               path: 'grid',
-             }
-);
-        }
-      }</script>
+    <title>Test display site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
-<body>
-        <div class="scene scene--card node1" id="node1">
-                <div class="card">
-                  <div class="card__face card__face--front"><p class="orgName">Org Name</p><img src="female-sill.png" alt="" id="sill"><p class="info1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                  <div class="card__face card__face--back">back</div>
-                </div>
-              </div>
-              <div class="scene scene--card scene2 node2" id="node2">
-                    <div class="card">
-                      <div class="card__face card__face--front"><p class="orgName">Org Name</p><img src="female-sill.png" alt="" id="sill"><p class="info1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                      <div class="card__face card__face--back">back</div>
-                    </div>
-                  </div>
-                  <div class="scene scene--card scene3 node3" id="node3">
-                    <div class="card">
-                      <div class="card__face card__face--front"><p class="orgName">Org Name</p><img src="female-sill.png" alt="" id="sill"><p class="info1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                      <div class="card__face card__face--back">back</div>
-                    </div>
-                  </div>
-                  <div class="scene scene--card scene4 node4" id="node4">
-                    <div class="card">
-                      <div class="card__face card__face--front"><p class="orgName">Org Name</p><img src="female-sill.png" alt="" id="sill"><p class="info1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                      <div class="card__face card__face--back">back</div>
-                    </div>
-                  </div>
+
+<body style="background-color:rgb(30,106,221);overflow:hidden;">
+    <div class="order-2 highlight-blue" style="height:39px;margin-top:-26px;">
+        <h2 class="text-center" style="font-family:Pacifico, cursive;margin-top:7vh;">Test display site</h2>
+        <div class="container">
+            <div class="intro"></div>
+            <div class="buttons"></div>
+        </div>
+    </div>
+    <div class="order-1" data-bs-parallax-bg="true" style="height:305px;background-image:url(https://unsplash.it/1800/900?image=1051);background-position:center;background-size:cover;">
+        <p style="font-family:Ubuntu, sans-serif;margin-right:8px;margin-left:8;font-size:20px;"></p>
+    </div>
+    <div class="card"></div>
+    <div class="highlight-blue" style="height:91px;"><iframe src="chart.html" width="100%" height="50vh" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
+
 </html>

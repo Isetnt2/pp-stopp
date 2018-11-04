@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <script src="leader-line.min.js"></script>
+    <script>document.onreadystatechange = () =>
+      {
+        if(document.readyState === 'complete')
+        {
+            var myLine = new LeaderLine(
+             document.getElementById('node2'),
+             document.getElementById('node4'),
+             {
+               dash: true,
+               path: 'grid',
+             }
+);
+var myLine = new LeaderLine(
+             document.getElementById('node2'),
+             document.getElementById('node3'),
+             {
+               dash: true,
+               path: 'grid',
+             }
+);
+var myLine = new LeaderLine(
+             document.getElementById('node3'),
+             document.getElementById('node4'),
+             {
+               dash: true,
+               path: 'grid',
+             }
+);
+var myLine = new LeaderLine(
+             document.getElementById('node1'),
+             document.getElementById('node2'),
+             {
+               dash: true,
+               path: 'grid',
+             }
+);
+        }
+      }</script>
+</head>
+<body>
+        <div class="scene scene--card node1" id="node1">
+                <div class="card">
+                  <div class="card__face card__face--front"><p class="orgName">Org Name</p><img src="female-sill.png" alt="" id="sill"><p class="info1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                  <div class="card__face card__face--back"><p class="infoBack">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae debitis animi sapiente nesciunt dignissimos.</p></div>
+                </div>
+              </div>
+              <div class="scene scene--card scene2 node2" id="node2">
+                    <div class="card">
+                      <div class="card__face card__face--front"><p class="orgName">Org Name</p><img src="female-sill.png" alt="" id="sill"><p class="info1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                      <div class="card__face card__face--back"><p class="infoBack">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae debitis animi sapiente nesciunt dignissimos.</p></div>
+                    </div>
+                  </div>
+                  <div class="scene scene--card scene3 node3" id="node3">
+                    <div class="card">
+                      <div class="card__face card__face--front"><p class="orgName">Org Name</p><img src="female-sill.png" alt="" id="sill"><p class="info1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                      <div class="card__face card__face--back"><p class="infoBack">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae debitis animi sapiente nesciunt dignissimos.</p></div>
+                    </div>
+                  </div>
+                  <div class="scene scene--card scene4 node4" id="node4">
+                    <div class="card">
+                      <div class="card__face card__face--front"><p class="orgName">Org Name</p><img src="female-sill.png" alt="" id="sill"><p class="info1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                      <div class="card__face card__face--back"><p class="infoBack">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae debitis animi sapiente nesciunt dignissimos.</p></div>
+                    </div>
+                  </div>
+</body>
+</html>
