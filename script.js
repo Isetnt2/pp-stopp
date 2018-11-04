@@ -1,10 +1,32 @@
-document.onreadystatechange = () =>
-{
-  if(document.readyState === 'complete')
-  {
-      var div1=document.getElementById('node1');
-      var div2=document.getElementById('node2');
-// dynamicPath helps to create a directional path between two div elements.
-      dynamicPath(div1,div2);
-  }
-}
+   var myLine = new LeaderLine(
+             document.getElementById('node2'),
+             document.getElementById('node4'),
+             {
+               dash: true,
+               path: 'grid',
+             }
+);
+var myLine = new LeaderLine(
+             document.getElementById('node2'),
+             document.getElementById('node3'),
+             {
+               dash: true,
+               path: 'grid',
+             }
+);
+var myLine = new LeaderLine(
+             document.getElementById('node3'),
+             document.getElementById('node4'),
+             {
+               dash: true,
+               path: 'grid',
+             }
+);
+var myLine = new LeaderLine(
+             document.getElementById('node1'),
+             document.getElementById('node2'),
+             {
+               dash: true,
+               path: 'grid',
+             }
+);

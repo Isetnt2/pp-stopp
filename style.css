@@ -5,8 +5,8 @@ body{
    overflow: hidden;
 }
 .scene {
-    width: 150px;                 /* Set width of cards */
-    height: 116px;
+    width: 26vh;                 /* Set width of cards */
+    height: 16vh;  
     display: flex;                /* Children use Flexbox */
     flex-direction: column;       /* Rotate Axis */
     border: 1px solid #EF9A9A;    /* Set up Border */
@@ -43,15 +43,16 @@ body{
     background: whitesmoke;
   }
   .orgName{
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     margin-top: 1%;
     font-size: 16px;
     font-style: bold;
     text-align: center;
   }
  .info1{
-    font-size: 0.497em;
+    font-size: 1vw;
     margin-left: 2%;
+    margin-top: 1%;
   }
   #sill{
     height: 40%;
@@ -66,12 +67,22 @@ body{
     transform: rotateY(180deg);
   }
   .scene2{
-    margin-left: 25%;
-    margin-top: 15%;
+    margin-left: 20vh;
+    margin-top: 10vh;
+    width: 26vh;                 /* Set width of cards */
+    height: 16vh;
   }
   .scene3{
-    margin-left: 30%;
-    margin-top: -30%;
+    margin-left: 30vh;
+    margin-top: 10vh;
+    width: 26vh;                 /* Set width of cards */
+    height: 16vh;
+  }
+  .scene4{
+    margin-left: 65vh;
+    margin-top: -45vh;
+    width: 26vh;                 /* Set width of cards */
+    height: 16vh;
   }
   .node1 .node2 .node3{
 z-index: 1;
